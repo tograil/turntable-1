@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="tt">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +29,7 @@
 					<a class="scroll" href="#contact">Contact</a>
 				</nav>
 			</div>
-		</header>
+		</header><!-- /header -->
 
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -47,9 +47,9 @@
 				</div>
 				<div class="item">
 					<img class="third-slide" src="img/1460110424.jpg" alt="Third slide">
-<!-- 										 <div class="container">
-											<div class="carousel-caption"></div>
-										</div> -->
+					<!-- <div class="container">
+						<div class="carousel-caption"></div>
+					</div>-->
 				</div>
 			</div>
 
@@ -62,21 +62,37 @@
 				<span class="fa fa-chevron-right" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
-		</div>
+		</div><!-- /.carousel -->
 
-
-		<section class="page-section">
+		<!-- <section class="page-section">
 			<div class="container">
 				<turntable></turntable>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="page-section" id="media">
 			<div class="container">
 				<div class="page-header">
 					<h1>Techno connecting people!</h1>
 				</div>
-				<iframe class="third-slide" width="100%" height="420" src="https://www.youtube.com/embed/j0ouZbE4KNU" frameborder="0" allowfullscreen></iframe>
+
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#tab-music" aria-controls="tab-music" role="tab" data-toggle="tab">Music</a>
+					</li>
+					<li role="presentation">
+						<a href="#tab-video" aria-controls="tab-video" role="tab" data-toggle="tab">Video</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="tab-music">
+						<turntable></turntable>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="tab-video">
+						<iframe class="third-slide" width="100%" height="420" src="//www.youtube.com/embed/j0ouZbE4KNU" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -147,15 +163,15 @@
 					<h1>Contact Us</h1>
 				</div>
 				<div class="row">
-
+					
 					<div class="col-md-6">
 						<h4>Adress:</h4>
 						<address>
 							<strong>Bullmann &amp; Schuth - Production</strong><br>
 							Bresslauerstraße 50<br>
-							DE-63128 Dietzenbach
+							DE-63128 Dietzenbach 
 						</address>
-
+						 
 						<h4>Contact:</h4>
 						Tel.: <a href="tel:+490607433795">+49 (0) 6074 33795</a><br>
 						E-Mail: <a href="mailto:bullmann-schuth@mail.de">bullmann-schuth@mail.de</a>
@@ -289,24 +305,25 @@
 			</div>
 		</footer>
 
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 		<script src="app/lib/jquery/dist/jquery.min.js"></script>
-    <script src="app/lib/angular/angular.min.js"></script>
-    <script src="app/lib/angular-audio/app/angular.audio.js"></script>
-    <script src="app/lib/konva/konva.min.js"></script>
-    <script src="app/modules/images.js"></script>
-    <script src="app/turntable.js"></script>
-    <script src="app/directives/turntableLayers/background.js"></script>
-    <script src="app/directives/turntableLayers/machine.js"></script>
-    <script src="app/directives/turntableLayers/disc.js"></script>
-    <script src="app/directives/turntableLayers/control.js"></script>
-    <script src="app/directives/turntableLayers/onoff.js"></script>
-    <script src="app/directives/turntableLayers/power.js"></script>
-    <script src="app/directives/turntableLayers/speedButtons.js"></script>
-    <script src="app/directives/turntableLayers/speedSlider.js"></script>
-    <script src="app/directives/turntableLayers/sound_Label.js"></script>
-    <script src="app/directives/turntable.js"></script>
+		<script src="app/lib/angular/angular.min.js"></script>
+		<script src="app/lib/konva/konva.min.js"></script>
+		<script src="app/lib/soundmanager2/dist/angular-soundmanager2.min.js"></script>
+		<script src="app/modules/images.js"></script>
+		<script src="app/turntable.js"></script>
+		<script src="app/directives/turntableLayers/background.js"></script>
+		<script src="app/directives/turntableLayers/machine.js"></script>
+		<script src="app/directives/turntableLayers/disc.js"></script>
+		<script src="app/directives/turntableLayers/control.js"></script>
+		<script src="app/directives/turntableLayers/onoff.js"></script>
+		<script src="app/directives/turntableLayers/power.js"></script>
+		<script src="app/directives/turntableLayers/speedButtons.js"></script>
+		<script src="app/directives/turntableLayers/speedSlider.js"></script>
+		<script src="app/directives/turntableLayers/sound_Label.js"></script>
 		<!--<script src="app/directives/turntableLayers/blue_btn.js"></script>-->
 		<!--<script src="app/directives/turntableLayers/red_btn.js"></script>-->
+		<script src="app/directives/turntable.js"></script>
 
 		<script src="dist/js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
