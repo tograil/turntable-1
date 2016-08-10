@@ -166,3 +166,7 @@ footer {
 	color: inherit;
 	padding-top: 1em;
 }
+
+.tab-pane {
+	padding: 1em 0;
+}
